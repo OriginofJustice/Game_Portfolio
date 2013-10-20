@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MixStringClass">
+      <UniqueIdentifier>{04cd1515-a8da-49b0-a89a-5fd38eb6a663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MixStringClass\korean">
+      <UniqueIdentifier>{d8cac760-d975-4a23-b8db-9e6b1042f41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MixStringClass\English">
+      <UniqueIdentifier>{f5db29ba-b060-4e15-a6ce-c8cfd1e41e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MixStringClass\Japan">
+      <UniqueIdentifier>{bc85cbe6-0ce1-4fed-a33e-549d3627f19a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MixString.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MixStringClass\TString.h">
+      <Filter>MixStringClass</Filter>
+    </ClInclude>
+    <ClInclude Include="MixStringClass\VSString.h">
+      <Filter>MixStringClass</Filter>
+    </ClInclude>
+    <ClInclude Include="MixStringClass\Key_Input.h">
+      <Filter>MixStringClass</Filter>
+    </ClInclude>
+    <ClInclude Include="MixStringClass\Korean\Mix_Korean.h">
+      <Filter>MixStringClass\korean</Filter>
+    </ClInclude>
+    <ClInclude Include="MixStringClass\English\English_OutPut.h">
+      <Filter>MixStringClass\English</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MixString.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MixStringClass\TString.cpp">
+      <Filter>MixStringClass</Filter>
+    </ClCompile>
+    <ClCompile Include="MixStringClass\VSString.cpp">
+      <Filter>MixStringClass</Filter>
+    </ClCompile>
+    <ClCompile Include="MixStringClass\Key_Input.cpp">
+      <Filter>MixStringClass</Filter>
+    </ClCompile>
+    <ClCompile Include="MixStringClass\Korean\Mix_Korean.cpp">
+      <Filter>MixStringClass\korean</Filter>
+    </ClCompile>
+    <ClCompile Include="MixStringClass\English\English_OutPut.cpp">
+      <Filter>MixStringClass\English</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="app.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
