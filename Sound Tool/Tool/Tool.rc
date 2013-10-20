@@ -1,0 +1,412 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\Tool.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Tool.ico"
+IDR_SoundToolTYPE       ICON                    "res\\ToolDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sound Tool Infomation"
+FONT 9, "MS 셸 대화 상자", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Sound Tool Ver 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TOOL_FORM DIALOGEX 0, 0, 580, 383
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "맑은 고딕", 400, 0, 0x81
+BEGIN
+    LTEXT           "Static",IDC_LPOSX,25,62,47,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN7,"msctls_updown32",UDS_ARROWKEYS,72,62,10,9
+    LTEXT           "Static",IDC_LPOSY,84,62,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN8,"msctls_updown32",UDS_ARROWKEYS,132,61,10,11
+    LTEXT           "Static",IDC_LPOSZ,144,62,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN9,"msctls_updown32",UDS_ARROWKEYS,192,61,10,11
+    LTEXT           "Static",IDC_LVELOX,25,81,47,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN10,"msctls_updown32",UDS_ARROWKEYS,72,81,10,9
+    LTEXT           "Static",IDC_LVELOY,84,81,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN11,"msctls_updown32",UDS_ARROWKEYS,132,79,10,11
+    LTEXT           "Static",IDC_LVELOZ,144,81,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN12,"msctls_updown32",UDS_ARROWKEYS,192,79,10,11
+    LTEXT           "Static",IDC_FORWARDX,25,104,47,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN13,"msctls_updown32",UDS_ARROWKEYS,72,103,10,9
+    LTEXT           "Static",IDC_FORWARDY,84,104,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN14,"msctls_updown32",UDS_ARROWKEYS,132,102,10,11
+    LTEXT           "Static",IDC_FORWARDZ,144,104,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN15,"msctls_updown32",UDS_ARROWKEYS,192,102,10,11
+    LTEXT           "Static",IDC_UPX,25,127,47,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN16,"msctls_updown32",UDS_ARROWKEYS,72,126,10,9
+    LTEXT           "Static",IDC_UPY,84,127,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN17,"msctls_updown32",UDS_ARROWKEYS,132,125,10,11
+    LTEXT           "Static",IDC_UPZ,144,127,48,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN18,"msctls_updown32",UDS_ARROWKEYS,192,125,10,11
+    GROUPBOX        "SOURCE",IDC_STATIC,228,3,345,161
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,250,29,17,109
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,286,28,17,109
+    CTEXT           "1.00",IDC_PITCH,238,141,32,9
+    CTEXT           "1.00",IDC_GAIN,276,141,30,9
+    PUSHBUTTON      "▶ Play",IDC_PLAY,387,121,59,13
+    PUSHBUTTON      "■ PAUSE",IDC_PAUSE,446,121,59,13
+    PUSHBUTTON      "■ STOP",IDC_STOP,505,121,59,13
+    LTEXT           "Buffer Reference",IDC_STATIC,390,20,51,8
+    LTEXT           "BUFFER NAME",IDC_BUFFERNAME,390,31,170,8
+    PUSHBUTTON      "Source Input",IDC_SOURCEINPUT,387,136,97,12
+    GROUPBOX        "Buffer View",IDC_STATIC,7,168,216,208
+    GROUPBOX        "Source View",IDC_SOURCEVIEW,228,168,346,208
+    PUSHBUTTON      "Sound Script Export",IDC_EXPORT,484,136,80,12
+    GROUPBOX        "Buffer",IDC_STATIC,7,3,216,161
+    PUSHBUTTON      "Wave File Input",IDC_BUTTON3,15,14,90,14
+    PUSHBUTTON      "Load Sound Script",IDC_BUTTON5,113,30,99,14
+    GROUPBOX        "Sample Position",IDC_STATIC,387,49,176,31
+    GROUPBOX        "Sample Velocity",IDC_STATIC,387,85,176,33
+    CONTROL         "",IDC_LIST5,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,177,208,104
+    CONTROL         "",IDC_LIST6,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER,232,178,336,103,WS_EX_RIGHT
+    LTEXT           "Pitch",IDC_STATIC,249,21,16,8
+    CTEXT           "Gain",IDC_STATIC,285,20,15,8
+    GROUPBOX        "Attribute",IDC_STATIC,306,18,75,57
+    CONTROL         "BGM",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,313,30,31,10
+    CONTROL         "Wave",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,313,43,33,10
+    CONTROL         "Voice",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,313,57,33,10
+    GROUPBOX        "Option",IDC_STATIC,307,78,73,71
+    CONTROL         "Loop",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,314,89,31,10
+    LTEXT           "0.00",IDC_POSX,407,64,28,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,437,61,9,14
+    LTEXT           "0.00",IDC_POSY,456,64,28,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,485,61,10,14
+    LTEXT           "0.00",IDC_POSZ,513,64,28,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,543,61,10,14
+    LTEXT           "0.00",IDC_VELOX,406,100,28,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,436,97,9,14
+    LTEXT           "0.00",IDC_VELOY,456,100,28,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_ARROWKEYS,485,97,10,14
+    LTEXT           "0.00",IDC_VELOZ,513,100,28,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_SPIN6,"msctls_updown32",UDS_ARROWKEYS,543,97,10,14
+    GROUPBOX        "Listener",IDC_STATIC,14,45,199,114
+    GROUPBOX        "Listener Position ( Not Save )",IDC_STATIC,18,52,188,20
+    GROUPBOX        "Listener Velocity ( Not Save )",IDC_STATIC,18,72,188,22
+    GROUPBOX        "Listener Forward ( Not Save )",IDC_STATIC,18,94,188,21
+    GROUPBOX        "Listener UpVector ( Not  Save )",IDC_STATIC,18,115,188,24
+    GROUPBOX        "Flie Type",IDC_STATIC,19,138,187,19
+    CONTROL         "OGG",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,66,144,30,10
+    CONTROL         "Wave",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,148,144,33,10
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER,232,285,335,74,WS_EX_RIGHT
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER,12,287,208,82,WS_EX_RIGHT
+    PUSHBUTTON      "▶ BGMPlay",IDC_BUTTON1,345,361,50,11
+    PUSHBUTTON      "■ BGM Stop",IDC_BUTTON6,395,361,57,11
+    PUSHBUTTON      "BGM Script Export",IDC_BUTTON7,452,361,115,11
+    PUSHBUTTON      "Load Bgm Script",IDC_BUTTON8,15,30,90,14
+    PUSHBUTTON      "Ogg File Input",IDC_BUTTON9,113,14,99,14
+    PUSHBUTTON      "BGM Source Input",IDC_BUTTON10,233,361,112,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Tool.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "Tool.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TOOL_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "New Script(&N)\tCtrl+N",      ID_FILE_NEW
+        MENUITEM "Open Script(&O)...\tCtrl+O",  ID_FILE_OPEN
+        MENUITEM "Save Script(&S)\tCtrl+S",     ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "Sound Tool Info (&A)...",     ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Sound Tool\n\nSoundTool\nSound Tool Files (*.JST)\n.JST\nSoundTool.Document\nSoundTool.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Tool"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "활성 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "활성 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "활성 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호, 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모두 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\Tool.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"         // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
